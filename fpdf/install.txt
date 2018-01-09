@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 FPDF est constitué des éléments suivants :
 
 - le fichier principal fpdf.php contenant la classe
@@ -13,3 +14,20 @@ Remarques :
 
 - Seuls les fichiers correspondant aux polices effectivement utilisées sont nécessaires
 - Les tutoriels fournis dans l'archive sont prêts à être exécutés
+=======
+FPDF est constitué des éléments suivants :
+
+- le fichier principal fpdf.php contenant la classe
+- les fichiers de définition des polices contenus dans le répertoire font
+
+Les fichiers de police sont indispensables dès que l'on veut écrire du texte dans un document.
+S'ils ne sont pas accessibles, la méthode SetFont() produira l'erreur suivante :
+
+FPDF error: Could not include font definition file
+
+
+Remarques :
+
+- Seuls les fichiers correspondant aux polices effectivement utilisées sont nécessaires
+- Les tutoriels fournis dans l'archive sont prêts à être exécutés
+>>>>>>> 6275eba46639944eebc5023ffee68418a6f55f55
