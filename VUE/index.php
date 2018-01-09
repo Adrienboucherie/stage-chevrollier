@@ -5,10 +5,11 @@ require_once ('../Class/PageBase.class.php');
 
 
 
-	$pageIndex = new pageBase ( "Bienvenue sur THT..." );
+	$pageIndex = new pageBase ( "Bienvenue !" );
 
 
-$pageIndex->contenu = 'slt c lrb';
+$pageIndex->contenu = '
+';
 
 
 $pageIndex->afficher();
