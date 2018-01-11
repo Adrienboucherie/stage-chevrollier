@@ -1,7 +1,7 @@
 <?php
 session_start ();
 include ('../Class/autoload.php');
-require_once ('../MODELE/test.class.php');
+require_once ('../MODELE/Connexion.class.php');
 $page= new PageBase ( "THT - Se Connecter" );
 
 $modeletest=new TestModele();
