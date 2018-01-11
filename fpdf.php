@@ -6,7 +6,7 @@ class PDF extends FPDF
 // En-tête
 function Header()
 {
-
+$oui="Adrien";
     // Police Arial gras 15
     $this->SetFont('Arial','',20);
     // Logo
@@ -20,13 +20,8 @@ function Header()
 
     // Police Arial gras 15
     $this->SetFont('Arial','B',25);
-    $this->Cell(20);
+$this->Cell(20);
     $this->Cell(0,10,utf8_decode('Liste d\'émargement'),0,0, 'C');
-
-    //tableau 
-    $this->SetFont('Arial','',15);
-    $this->Ln(0);
-    $this->Cell(0,0, 'Nom', 1, 1, '');
 }
 
 // Pied de page
