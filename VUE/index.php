@@ -5,7 +5,7 @@ require_once ('../Class/PageBase.class.php');
 
 
 
-	$pageIndex = new pageBase ( "Bienvenue !" );
+	$pageIndex = new PageBase ( "Bienvenue !" );
 
 
 $pageIndex->contenu = '

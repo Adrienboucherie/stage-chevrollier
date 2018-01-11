@@ -6,22 +6,28 @@ class PDF extends FPDF
 // En-tête
 function Header()
 {
-$oui="Adrien";
-    // Police Arial gras 15
-    $this->SetFont('Arial','',20);
     // Logo
-    $this->Image('logo_chev.jpg',10,6,30);
-    // Décalage à droite
-    $this->Cell(90);
-    // Titre
-    $this->Cell(30,10,utf8_decode('Baccalauréat technologique 2018'),0,0,'C');
-    // Saut de ligne
-    $this->Ln(15);
-
+    $this->Image('image/logo_chev.jpg',10,6,35,53);
     // Police Arial gras 15
-    $this->SetFont('Arial','B',25);
-$this->Cell(20);
-    $this->Cell(0,10,utf8_decode('Liste d\'émargement'),0,0, 'C');
+    $this->SetFont('Arial','I',14);
+    // Décalage à droite
+    $this->Cell(80);
+    // Titre
+    $this->Cell(130,10,'Angers, Le Mardi 9 Janvier 2018',0,0,'C');
+
+   $this->SetFont('Arial','B',24);
+    // Saut de ligne
+    $this->Ln(20);
+     $this->Cell(0,0,'Convocation',0,0,'C');
+
+    $this->Ln(9);
+     $this->SetFont('Arial','B',16);
+      $this->Cell(0,0,utf8_decode('Examen en cours d\'année'),0,0,'C');
+
+
+    $this->Ln(15);
+     $this->SetFont('Arial','B',18);
+      $this->Cell(0,0,utf8_decode('Baccalauréat technologique'),0,0,'C');
 }
 
 // Pied de page

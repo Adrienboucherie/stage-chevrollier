@@ -10,7 +10,7 @@ function Header()
     // Police Arial gras 15
     $this->SetFont('Arial','',20);
     // Logo
-    $this->Image('logo_chev.jpg',10,6,30);
+    $this->Image('image/logo_chev.jpg',10,6,35,53);
     // Décalage à droite
     $this->Cell(90);
     // Titre
@@ -22,11 +22,7 @@ function Header()
     $this->SetFont('Arial','B',25);
     $this->Cell(20);
     $this->Cell(0,10,utf8_decode('Liste d\'émargement'),0,0, 'C');
-
-    //tableau 
-    $this->SetFont('Arial','',15);
-    $this->Ln(0);
-    $this->Cell(0,0, 'Nom', 1, 1, '');
+  
 }
 
 // Pied de page
