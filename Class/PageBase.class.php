@@ -1,5 +1,5 @@
 <?php
-class pageBase {
+class PageBase {
 	private $style = array (
 			'bootstrap',
 			'bootstrap.min',
@@ -31,8 +31,8 @@ class pageBase {
   <li class="active"><a href="index.php">Accueil</a></li>
    <li><a href="convocation.php">Convocations</a></li>
    <li><a href="emargement.php">Emargement</a></li>
-   <li style="float:right"><a href="page3.html">Contact</a></li>
-</ul>
+   <li style="float:right"><a href="ElevesVue.php">Connexion</a></li>
+  </ul>
 </div>
 ';
 

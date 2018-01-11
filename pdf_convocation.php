@@ -7,7 +7,7 @@ class PDF extends FPDF
 function Header()
 {
     // Logo
-    $this->Image('logo_chev.jpg',10,6,35,53);
+    $this->Image('image/logo_chev.jpg',10,6,35,53);
     // Police Arial gras 15
     $this->SetFont('Arial','I',14);
     // Décalage à droite
