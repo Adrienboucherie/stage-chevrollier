@@ -25,13 +25,11 @@ class PageBase {
 		$this->titre = $t;
 		$this->description = 'MARCHER pour une bonne action';
 		$this->motsCles = 'marche, trail, association, caritative, equipe, coureur';
-		$this->entete = '
+		$this->menu = '
 		<div id="cssmenu">
 <ul>
   <li class="active"><a href="index.php">Accueil</a></li>
-   <li><a href="convocation.php">Convocations</a></li>
-   <li><a href="emargement.php">Emargement</a></li>
-   <li style="float:right"><a href="ElevesVue.php">Connexion</a></li>
+   <li style="float:right"><a href="VerifSessionOK.php">Connexion</a></li>
   </ul>
 </div>
 ';

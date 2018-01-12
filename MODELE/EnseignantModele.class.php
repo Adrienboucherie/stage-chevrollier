@@ -1,10 +1,10 @@
 <?php
 require_once('../Class/Connexion.class.php');
-class ElevesModele {
+class EnseignantModele {
 	private $idcELE = null;
 
 	public function __construct() {
-		
+
 		try {
 			$ConnexionELE = new Connexion();
 			$this->idcELE = $ConnexionELE->IDconnexion;
@@ -16,10 +16,19 @@ class ElevesModele {
 		if ($this->idcELE) {
 			$req ="SELECT * from eleves;" ;
 			$resultELE = $this->idcELE->query($req);
-			
+
 			return $resultELE;
 		}
 	}
-    
+
+	public function connect($nom, $mdp){
+
+		if ($this->idcELE) {
+			$req ="SELECT * FROM ENSEIGNANT where MAIL_ENS ='". $nom ."' and PASSWORD ='". $mdp ."';" ;
+			$resultEQU = $this->idcELE->query($req);
+		return $resultEQU->fetch();
+		}
+	}
+
 }
 ?>

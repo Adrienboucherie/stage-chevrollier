@@ -10,7 +10,7 @@ class Connexion {
 		try {
 			$this->IDconnexion = new MyPDO ( 'mysql:host=' . $this->PARAM_hote . ';dbname=' . $this->PARAM_nom_bd, $this->PARAM_utilisateur, $this->PARAM_mot_passe );
 			$this->IDconnexion->exec ( 'SET NAMES utf8');
-			
+
 			} catch ( PDOException $e ) {
 			echo 'hote: ' . $this->PARAM_hote . ' ' . $_SERVER ['DOCUMENT_ROOT'] . '<br />';
 			echo 'Erreur : ' . $e->getMessage () . '<br />';
